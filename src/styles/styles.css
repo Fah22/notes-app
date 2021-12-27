@@ -3,6 +3,7 @@ body {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .notes-container {
@@ -27,6 +28,10 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.note span {
+  font-weight: 600;
 }
 
 .note-footer {

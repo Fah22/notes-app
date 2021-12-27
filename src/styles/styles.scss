@@ -1,11 +1,16 @@
 // colors
 $main-note: rgb(150, 247, 150);
 $new-note: rgb(241, 169, 126);
+$text-color: #fff;
+
+// fonts 
+$font : 'Josefin Sans', sans-serif; 
 
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: $font;
 }
 
 .notes-container {
@@ -23,6 +28,10 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    span {
+        font-weight: 600;
+    }
 }
 
 .note-footer {
