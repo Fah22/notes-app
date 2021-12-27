@@ -1,0 +1,27 @@
+// colors
+$main-note: rgb(150, 247, 150);
+$new-note: rgb(241, 169, 126);
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.note {
+    background-color: $main-note;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    padding: 1rem;
+    min-height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.note-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
