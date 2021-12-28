@@ -45,3 +45,36 @@ body {
     grid-gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
+
+.new-note {
+    background: $new-note;
+    border-radius: 15px;
+    padding: 1rem;
+    min-height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+textarea {
+    border: none;
+    background: $new-note;
+    resize: none;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.save-note {
+    background-color: #fff;
+    padding: 1em;
+    border: none;
+    border-radius: 15px;
+    font-weight: 500;
+    cursor: pointer;
+
+    &:hover {
+       box-shadow: ;
+    }
+}
