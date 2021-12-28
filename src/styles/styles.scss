@@ -13,11 +13,17 @@ body {
     font-family: $font;
 }
 
+.heading {
+    font-size: 30px;
+    padding: 1em 0em;
+}
+
 .notes-container {
     max-width: 960px;
     margin-right: auto;
     margin-left: auto;
     padding: 1em;
+    min-height: 100vh;
 }
 
 .note {
@@ -28,6 +34,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    white-space: pre-wrap;
 
     span {
         font-weight: 600;
@@ -54,6 +61,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    white-space: pre-wrap;
 }
 
 textarea {
@@ -75,6 +83,32 @@ textarea {
     cursor: pointer;
 
     &:hover {
-       box-shadow: ;
+       box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);;
+    }
+}
+
+.error-message {
+    color: red;
+}
+
+.delete-icon {
+    cursor: pointer;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background: rgb(233, 233, 233);
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 1.5em;
+
+    input {
+        border: none;
+        background: rgb(233, 233, 233);
+
+        &:focus {
+            outline: none;
+        }
     }
 }

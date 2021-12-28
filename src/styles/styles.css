@@ -6,11 +6,17 @@ body {
   font-family: "Josefin Sans", sans-serif;
 }
 
+.heading {
+  font-size: 30px;
+  padding: 1em 0em;
+}
+
 .notes-container {
   max-width: 960px;
   margin-right: auto;
   margin-left: auto;
   padding: 1em;
+  min-height: 100vh;
 }
 
 .note {
@@ -28,6 +34,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  white-space: pre-wrap;
 }
 
 .note span {
@@ -69,6 +76,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  white-space: pre-wrap;
 }
 
 textarea {
@@ -91,6 +99,37 @@ textarea:focus {
 }
 
 .save-note:hover {
-  background-color: #96f796;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.error-message {
+  color: red;
+}
+
+.delete-icon {
+  cursor: pointer;
+}
+
+.search-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #e9e9e9;
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 1.5em;
+}
+
+.search-bar input {
+  border: none;
+  background: #e9e9e9;
+}
+
+.search-bar input:focus {
+  outline: none;
 }
 /*# sourceMappingURL=styles.css.map */
